@@ -1,31 +1,10 @@
-import { useState, useEffect } from "react";
 import logo from "../../assets/images/logo.svg";
 import "./styles.css";
 import Header from "../../components/Header/index";
-import api from "../../services/api";
-
-interface Course {
-  id: number;
-  name: string;
-  description: string;
-}
+import useCourses from "../../hooks/useCourses";
 
 function LandingPage() {
-  const [courses, setCourses] = useState<Course[]>([]);
-
-  async function getCourses() {
-    try {
-      const { data } = await api.get("courses");
-      setCourses(data);
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  useEffect(() => {
-    getCourses();
-  }, []);
+  const courses = useCourses();
 
   return (
     <div className="App">
