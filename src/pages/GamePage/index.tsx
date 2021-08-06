@@ -2,6 +2,7 @@ import "./styles.css";
 import Lottie from "react-lottie";
 import animationData from "../../assets/animations/13689-gameboy-color.json";
 import useSound from "use-sound";
+import ParticlesWhite from "../../components/ParticlesWhite";
 
 const animationOptions = {
   loop: true,
@@ -20,6 +21,7 @@ function GamePage() {
   return (
     <div className="game-container">
       <div className="game-section">
+        <ParticlesWhite />
         <div className="game-content">
           <Lottie options={animationOptions} width={300} height={300} />
           <h1>Vamos jogar?</h1>
