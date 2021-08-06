@@ -1,0 +1,23 @@
+.game-container {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 205, 180),
+    rgb(24, 86, 105)
+  );
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.game-section {
+  background-image: linear-gradient(to bottom, black, rgb(31, 34, 33));
+  border-radius: 16px;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
