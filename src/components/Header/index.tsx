@@ -30,7 +30,7 @@ function Header() {
           <Link to="/" className="header-link">
             <h2>Página Inicial</h2>
           </Link>
-          <Link to="/courses" className="header-link">
+          <Link to="/todos-cursos" className="header-link">
             <h2>Cursos</h2>
           </Link>
         </div>
@@ -58,7 +58,7 @@ function Header() {
           <Link to="/" className="header-link">
             <h3>Página Inicial</h3>
           </Link>
-          <Link to="/courses" className="header-link">
+          <Link to="/todos-cursos" className="header-link">
             <h3>Cursos</h3>
           </Link>
         </div>

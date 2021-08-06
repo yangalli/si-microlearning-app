@@ -2,6 +2,7 @@ import logo from "../../assets/images/logo.svg";
 import "./styles.css";
 import Header from "../../components/Header/index";
 import useCourses from "../../hooks/useCourses";
+import Banner from "../../components/Banner";
 
 function LandingPage() {
   const courses = useCourses();
@@ -9,7 +10,9 @@ function LandingPage() {
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
+      <div className="App-header">
+        <Banner />
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -26,7 +29,7 @@ function LandingPage() {
             </div>
           ))}
         </a>
-      </header>
+      </div>
     </div>
   );
 }
