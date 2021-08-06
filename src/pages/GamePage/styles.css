@@ -21,3 +21,37 @@
   align-items: center;
   justify-content: center;
 }
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .game-content {
+    animation: TextSpin infinite 6s forwards;
+  }
+}
+
+@keyframes TextSpin {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+    filter: blur(10px) drop-shadow(1px 1px 1px white) sepia(1);
+  }
+  25% {
+    opacity: 0.8;
+    transform: translateY(0px);
+    filter: blur(0px) drop-shadow(1px 1px 1px white) sepia(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+    filter: blur(0px) drop-shadow(1px 1px 1px white) sepia(0.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+    filter: blur(10px) drop-shadow(1px 1px 1px white) sepia(1);
+  }
+}

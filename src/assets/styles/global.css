@@ -27,6 +27,21 @@
       format("svg");
 }
 
+@font-face {
+  font-family: "Bloc";
+  src: url("//db.onlinewebfonts.com/t/d1a880e08bdb2140abd96f8f8d2d9515.eot");
+  src: url("//db.onlinewebfonts.com/t/d1a880e08bdb2140abd96f8f8d2d9515.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d1a880e08bdb2140abd96f8f8d2d9515.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/d1a880e08bdb2140abd96f8f8d2d9515.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/d1a880e08bdb2140abd96f8f8d2d9515.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/d1a880e08bdb2140abd96f8f8d2d9515.svg#Bloc")
+      format("svg");
+}
+
 :root {
   --color-background: #f0f0f7;
   --color-primary-lighter: #9871f5;
@@ -98,9 +113,11 @@ input {
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 1.6;
+  font-size: 4.35em;
+  line-height: 1em;
   color: white;
+  font-family: "Bloc";
+  animation: scratchy 0.253s linear forwards infinite;
 }
 
 h2 {
