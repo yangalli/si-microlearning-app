@@ -3,6 +3,8 @@ import Lottie from "react-lottie";
 import animationData from "../../assets/animations/13689-gameboy-color.json";
 import useSound from "use-sound";
 import ParticlesWhite from "../../components/ParticlesWhite";
+import ReactAudioPlayer from "react-audio-player";
+import sound from "./sound.mp3";
 
 const animationOptions = {
   loop: true,
@@ -27,6 +29,11 @@ function GamePage() {
           <h1>Vamos jogar?</h1>
         </div>
       </div>
+
+      <div style={{ display: "none" }}>
+        <ReactAudioPlayer src={sound} autoPlay controls />
+      </div>
+
       <button onClick={() => play()}>Boop!</button>
     </div>
   );

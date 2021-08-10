@@ -33,6 +33,9 @@ function Header() {
           <Link to="/todos-cursos" className="header-link">
             <h2>Cursos</h2>
           </Link>
+          <Link to="/jogo" className="header-link">
+            <h2>Aprender</h2>
+          </Link>
         </div>
       </div>
     ) : null;
@@ -60,6 +63,9 @@ function Header() {
           </Link>
           <Link to="/todos-cursos" className="header-link">
             <h3>Cursos</h3>
+          </Link>
+          <Link to="/jogo" className="header-link">
+            <h3>Aprender</h3>
           </Link>
         </div>
       </nav>
